@@ -1,20 +1,16 @@
 import React from 'react';
-import {Provider} from 'react-redux';
-import rootReducer from './slices';
 import AuthApp from './components/AuthApp';
 import TodoApp from './components/TodoApp';
-import {configureStore} from '@reduxjs/toolkit';
 import PostsApp from './components/PostsApp';
-
-const store = configureStore({reducer: rootReducer});
+import {RecoilRoot} from 'recoil';
 
 function App() {
   return (
-    <Provider store={store}>
-      {/* <AuthApp /> */}
+    <RecoilRoot>
+      <AuthApp />
       {/* <TodoApp /> */}
-      <PostsApp />
-    </Provider>
+      {/* <PostsApp /> */}
+    </RecoilRoot>
   );
 }
 
