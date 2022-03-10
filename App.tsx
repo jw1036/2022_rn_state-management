@@ -8,8 +8,8 @@ function App() {
   return (
     <RecoilRoot>
       {/* <AuthApp /> */}
-      <TodoApp />
-      {/* <PostsApp /> */}
+      {/* <TodoApp /> */}
+      <PostsApp />
     </RecoilRoot>
   );
 }
