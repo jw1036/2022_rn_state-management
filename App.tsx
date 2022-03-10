@@ -7,8 +7,8 @@ import {RecoilRoot} from 'recoil';
 function App() {
   return (
     <RecoilRoot>
-      <AuthApp />
-      {/* <TodoApp /> */}
+      {/* <AuthApp /> */}
+      <TodoApp />
       {/* <PostsApp /> */}
     </RecoilRoot>
   );
